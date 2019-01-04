@@ -1,0 +1,222 @@
+.nav-link.padded {
+    padding: 0.5rem 1.5rem !important;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+}
+
+.fader {
+
+    /* Positioning elements in lines */
+    display: inline-block;
+
+    /* This is necessary for position:absolute to work as desired */
+    position: relative;
+
+    /* Preventing zoomed images to grow outside their elements */
+    overflow: hidden;
+}
+
+.fader img {
+    /* Stretching the images to fill whole elements */
+
+    /* Preventing blank space below the image */
+    line-height: 0;
+
+    /* A one-second transition was to disturbing for me */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.fader img:hover {
+    /* Making images appear bigger and transparent on mouseover */
+    opacity: 1;
+}
+
+p.description strong, li.description strong {
+    color: gold;
+}
+
+/* For Card Hover transitions */
+a.custom-card, a.custom-card:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-img-top {
+    background-color: #f8f9fa;
+}
+
+.flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    /* justify-content: center; */
+    /* -webkit-box-align: center; */
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    height: 100%;
+}
+
+.flex-center p {
+    margin: 0
+}
+
+.flex-center ul {
+    text-align: center
+}
+
+.flex-center ul li {
+    margin-bottom: 1rem
+}
+
+.flex-center ul li:last-of-type {
+    margin-bottom: 0
+}
+
+.view {
+    position: relative;
+    overflow: hidden;
+    cursor: default
+}
+
+.view .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed
+}
+
+.view img, .view video {
+    position: relative;
+    display: block
+}
+
+.view video.video-intro {
+    z-index: -100;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: 1s opacity;
+    -o-transition: 1s opacity;
+    transition: 1s opacity;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto
+}
+
+.overlay .mask {
+    opacity: 0;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+.overlay .mask:hover {
+    opacity: 1
+}
+
+.zoom img, .zoom video {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.zoom:hover img, .zoom:hover video {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.rgba-blue-strong, .rgba-blue-strong:after {
+    background-color: rgba(33, 150, 243, 0.9)
+}
+
+/* For buttons */
+.cta, a.cta {
+    padding: 18px 54px;
+    text-align: center;
+    border-radius: 28.5px;
+    border: 0;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 35px 0;
+    transition: all .15s ease-out
+}
+
+.cta:hover, a.cta:hover {
+    transform: translateY(-1px)
+}
+
+.cta.primary-cta, a.cta.primary-cta {
+    color: #fff;
+    background-color: #ff4757;
+    box-shadow: 0 2px 5px 0 rgba(255, 90, 110, .3)
+}
+
+.cta.primary-cta:hover, a.cta.primary-cta:hover {
+    box-shadow: 0 7px 14px 0 rgba(255, 90, 110, .3), 0 3px 6px 0 rgba(255, 90, 110, .3)
+}
+
+.cta.secondary-cta, a.cta.secondary-cta {
+    color: #fff;
+    background-color: #5c6ae6;
+    box-shadow: 0 2px 5px 0 rgba(92, 106, 230, .3)
+}
+
+.cta.secondary-cta:hover, a.cta.secondary-cta:hover {
+    box-shadow: 0 7px 14px 0 rgba(92, 106, 230, .3), 0 3px 6px 0 rgba(92, 106, 230, .3)
+}
+
+.cta.white-cta, a.cta.white-cta {
+    color: #5c6ae6;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3)
+}
+
+.cta.white-cta:hover, a.cta.white-cta:hover {
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, .3), 0 3px 6px 0 rgba(0, 0, 0, .3)
+}
+
+.cta.inverted-cta, a.cta.inverted-cta {
+    color: #71d1dc;
+    background-color: transparent;
+    border: 1px solid #71d1dc;
+    transition: all .15s ease-out
+}
+
+.cta.inverted-cta:hover, a.cta.inverted-cta:hover {
+    background-color: #71d1dc;
+    color: #fff
+}
+
+.cta.inline-cta, a.cta.inline-cta {
+    margin: 35px 35px 70px
+}
+

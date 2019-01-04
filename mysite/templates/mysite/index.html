@@ -1,0 +1,321 @@
+{% extends 'mysite/base.html' %}
+
+{% block content %}
+
+{% load static %}
+<div style="height: 100vh;">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading bold">Hello! 👋 I'm Mike Fu</h1>
+            <h2 class="jumbotron-heading regular">Aspiring Data Scientist and Software Engineer</h2>
+            <div class="container">
+                <a class="chevron secondary-cta cta t-bold inline-cta" href="{% url 'home' %}#projects">Projects</a>
+                <a class="undefined primary-cta cta t-bold inline-cta" href="{% url 'home' %}#experience">Experience</a>
+            </div>
+
+            <p class="lead text-muted">Current Sophomore studying Computer Science and Statistics at Colby College.
+                Check out some of the cool projects I have been working on!</p>
+        </div>
+    </section>
+</div>
+
+<!--Projects anchor-->
+<a name="projects"></a>
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <h2 class="jumbotron-heading bold" style="margin-bottom: 5%">Projects</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="view overlay">
+                        <a class="custom-card" href="https://github.com/haohaom1/Automated-Email" target="_blank">
+                            <img class="card-img-top"
+                                 alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                                 src="{% static 'mysite/images/GUI.png' %}"
+                                 data-holder-rendered="true">
+                            <div class="mask flex-center rgba-blue-strong">
+                                <p style="color: white!important;">View Source Code</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <li class="description">
+                            Classifier uses Logistic Regression and Natural Language Processing
+                        </li>
+                        <li class="description">
+                            Frontend GUI using Tkinter.
+                        </li>
+                        <li class="description">
+                            Achieved accuracy of 93%.
+                        </li>
+                        <li class="description">
+                            15x the speed of manual classification.
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="view overlay">
+                        <a class="custom-card" href="https://github.com/haohaom1/BigelowResearch" target="_blank">
+                            <img class="card-img-top"
+                                 alt="Thumbnail [100%x225]"
+                                 src="{% static 'mysite/images/Bigelow_research.png' %}"
+                                 data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="mask flex-center rgba-blue-strong">
+                                <p style="color: white!important;">View Source Code</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <li class="description">
+                            Built visualizations and animations using Matplotlib.
+                        </li>
+                        <li class="description">
+                            Manipulated data using Pandas.
+                        </li>
+                        <li class="description">
+                            Produced graphs expected to be included in final research paper.
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="view overlay">
+                        <a class="custom-card" href="https://github.com/haohaom1/NotHotDog" target="_blank">
+                            <img class="card-img-top"
+                                 alt="Thumbnail [100%x225]"
+                                 src="{% static 'mysite/images/hotdog.png' %}"
+                                 data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="mask flex-center rgba-blue-strong">
+                                <p style="color: white!important;">View Source Code</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <li class="description">
+                            Classifies whether an image is a hot dog or not
+                        </li>
+                        <li class="description">
+                            Built Convolutional neural network (CNN) with only numpy dependency.
+                        </li>
+                        <li class="description">
+                            Achieved Accuracy of 92%.
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="view overlay">
+                        <a class="custom-card" href="https://github.com/haohaom1/cbb_hackathon_2018" target="_blank">
+                            <img class="card-img-top"
+                                 alt="Thumbnail [100%x225]"
+                                 src="{% static 'mysite/images/firebase.png' %}"
+                                 data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="mask flex-center rgba-blue-strong">
+                                <p style="color: white!important;">View Source Code</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <li class="description">
+                            Location tracker for Rasp. PI using wifi
+                        </li>
+                        <li class="description">
+                            Google Firebase backend to transmit real-time geolocation data to the cloud
+                        </li>
+                        <li class="description">
+                            Colby Bowdoin Bates Hacks Best Use of GCP (Google Cloud Platform)
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="view overlay">
+                        <a class="custom-card" href="https://github.com/haohaom1/ArcadeSnake" target="_blank">
+                            <img class="card-img-top"
+                                 alt="Thumbnail [100%x225]"
+                                 src="{% static 'mysite/images/snake.png' %}"
+                                 data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="mask flex-center rgba-blue-strong">
+                                <p style="color: white!important;">View Source Code</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <li class="description">
+                            Built Snake in C++ to work with Metro Mini microcontroller
+                        </li>
+                        <li class="description">
+                            Assembled game controller including joystick and four directional buttons
+                        </li>
+                        <li class="description">
+                            Displayed on a FeatherWing LED Matrix
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="view overlay">
+                        <a class="custom-card" href="#" target="_blank">
+                            <img class="card-img-top"
+                                 alt="Thumbnail [100%x225]"
+                                 src="{% static 'mysite/images/minesweeper.png' %}"
+                                 data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="mask flex-center rgba-blue-strong">
+                                <p style="color: white!important;">View Source Code</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <li class="description">
+                            Built Minesweeper in VHDL using Quartus
+                        </li>
+                        <li class="description">
+                            Game runs on an Altera DE1 Board by Intel
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Experience-->
+<a name="experience"></a>
+<div class="album py-5 bg-white">
+
+    <div class="container" style="margin-bottom: 5%">
+
+        <h2 class="jumbotron-heading bold">Experience</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline6">
+                    <div class="timeline">
+                        <a class="timeline-content custom-card" href="http://www.atlasmerchantcapital.com/"
+                           target="_blank">
+                            <span class="year">2019</span>
+                            <div class="content-inner">
+                                <span class="icon"><i class="fa fa-bank"></i></span>
+                                <h3 class="title">Finance Intern, Atlas Merchant Capital</h3>
+                                <p class="description">
+                                    I will be interning with <strong>Atlas Merchant Capital</strong>, a
+                                    Private Equity
+                                    Company
+                                    Based in New York. I will be helping with portfolio evaluation and modeling
+                                    optimization.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content custom-card" href="https://github.com/haohaom1/Automated-Email"
+                           target="_blank">
+                            <span class="year">2017-Present</span>
+                            <div class="content-inner">
+                                <span class="icon"><i class="fa fa-rocket"></i></span>
+                                <h3 class="title">Research Intern, Colby College</h3>
+                                <p class="description">
+                                    From the September 2017 to now, I work for the Advanced Strategy Department. I
+                                    developed
+                                    an app that can classify whether a Google Alert article is with a
+                                    <strong>93%</strong>
+                                    accuracy. The app is coded entirely in <strong>Python</strong>.
+                                </p>
+                                <li class="description">
+                                    Logistic Regression from <strong>Scikit-Learn</strong>
+                                </li>
+                                <li class="description">
+                                    <strong class="gold"> Tkinter</strong> GUI for more user-friendly usage
+                                </li>
+
+                                <p class="description" style="margin-top: 10px">
+                                    In addition, I help with data manipulation tasks with <strong>Pandas</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content custom-card" href="https://github.com/haohaom1/BigelowResearch"
+                           target="_blank">
+                            <span class="year">2018 Summer</span>
+                            <div class="content-inner">
+                                <span class="icon"><i class="fa fa-briefcase"></i></span>
+                                <h3 class="title">Summer Research Intern, Bigelow Labs</h3>
+                                <p class="description">
+                                    In the Summer of 2018, I worked closely with <strong>Professor Bruce
+                                    Maxwell</strong>
+                                    and <strong>Dr. Nichole Price</strong> researching on the effects of Kelp on
+                                    Mussel
+                                    Growth and Ocean Chemistry. All work was done in <strong>Python</strong>
+                                </p>
+                                <li class="description">
+                                    Built visualizations and animations using <strong>Matplotlib</strong>
+                                </li>
+                                <li class="description">
+                                    Manipulated data using <strong>Pandas</strong>
+                                </li>
+                                <li class="description">
+                                    Produced graphs expected to be included in final research paper
+                                </li>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content custom-card" href="#" target="_blank">
+                            <span class="year">2017</span>
+                            <div class="content-inner">
+                                <span class="icon"><i class="fa fa-globe"></i></span>
+                                <h3 class="title">Data Science Bootcamp</h3>
+                                <p class="description">
+                                    Completed the Applied Data Science with Python Specialization on Coursera.
+                                    Became
+                                    Proficient in the following skills:
+                                </p>
+                                <li class="description">
+                                    Pandas
+                                </li>
+                                <li class="description">
+                                    MatplotLib + Seaborn
+                                </li>
+                                <li class="description">
+                                    Scikit-Learn + TensorFlow
+                                </li>
+                                <li class="description">
+                                    NLTK
+                                </li>
+                                <li class="description">
+                                    NetworkX
+                                </li>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a class="timeline-content custom-card" href="http://www.habnet.com/" target="_blank">
+                            <span class="year">2016</span>
+                            <div class="content-inner">
+                                <span class="icon"><i class="fa fa-mobile"></i></span>
+                                <h3 class="title">Web Designer</h3>
+                                <p class="description">
+                                    Created and maintained a website for a nonprofit organization.
+                                    Used HTML and CSS to style and format the website.
+                                    Wrote Javascript code for user interaction.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
